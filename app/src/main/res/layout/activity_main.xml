@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivMeme"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/colorWarning"
+        android:scaleType="centerInside"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/pbLoader"
+        />
+
+</FrameLayout>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+        <Button
+            android:layout_width="180dp"
+            android:id="@+id/btShare"
+            android:layout_height="80dp"
+            android:layout_gravity="left"
+            android:text="@string/btShare"
+            android:onClick="shareMeme"
+            android:background="@color/shareColor"
+            />
+        <Button
+            android:id="@+id/btNext"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            android:onClick="nextMeme"
+            android:background="@color/nextColor"
+            android:text='@string/btNext'/>
+
+    </FrameLayout>
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
